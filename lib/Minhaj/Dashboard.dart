@@ -11,7 +11,7 @@ class Dashboard extends StatelessWidget {
 
           ),
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black , size: 30) ,
+        iconTheme: IconThemeData(color: Colors.black , size: 25) ,
 
         elevation: 10,
         title: Image(image: AssetImage("Assets/Images/IsDB-BISEW.png" ), width:150,),
@@ -20,11 +20,13 @@ class Dashboard extends StatelessWidget {
 
         backgroundColor: Colors.white.withOpacity(0.2),
         actions: [
-          RaisedButton(
-            onPressed: (){},
-            child: Icon(Icons.logout),
-            color:Colors.blue.withOpacity(0.0) ,
-          )
+          IconButton(onPressed: (){}, icon:Icon(Icons.logout) )
+          // ,
+          // RaisedButton(
+          //   onPressed: (){},
+          //   child: Icon(Icons.logout),
+          //   color:Colors.white.withOpacity(0) ,
+          // )
         ],
       ),
           
