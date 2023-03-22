@@ -17,7 +17,6 @@ class Dashboard extends StatelessWidget {
         title: Image(image: AssetImage("Assets/Images/IsDB-BISEW.png" ), width:150,),
         centerTitle: true,
 
-
         backgroundColor: Colors.white.withOpacity(0.2),
         actions: [
           IconButton(onPressed: (){}, icon:Icon(Icons.logout) )
@@ -30,7 +29,35 @@ class Dashboard extends StatelessWidget {
         ],
       ),
           
-          body:GridView.count(crossAxisCount: 2)
+          body:GridView.count(
+
+              crossAxisCount: 2,
+            children: [
+
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.deepPurpleAccent,
+              ),
+              SizedBox(width: 20),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.deepPurpleAccent,
+              ),SizedBox(width: 20, height: 20,),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.deepPurpleAccent,
+              ),SizedBox(width: 20, height: 20,),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.deepPurpleAccent,
+              )
+            ],
+
+          )
     ));
   }
 }
