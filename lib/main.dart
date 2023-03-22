@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hms_flutter/ProfilePage.dart';
 
+import 'Minhaj/Dashboard.dart';
+
 void main() {
-  runApp(ProfilePage());
+  runApp(Dashboard());
 }
 
 class MainClass extends StatelessWidget {
