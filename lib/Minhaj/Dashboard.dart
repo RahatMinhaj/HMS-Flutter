@@ -122,13 +122,15 @@ class Dashboard extends StatelessWidget {
                         // color: Colors.lightGreen,
                         child: Container(
                           decoration: BoxDecoration(
-                              color: Colors.deepOrangeAccent,
+                              // color: Colors.deepOrangeAccent,
                               borderRadius: BorderRadius.circular(25)),
                           constraints: BoxConstraints.expand(),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
+                              Image(image: AssetImage("Assets/Images/Doctor.png"))
+                              ,
                               Icon(
                                 Icons.health_and_safety,
                                 size: 50,
